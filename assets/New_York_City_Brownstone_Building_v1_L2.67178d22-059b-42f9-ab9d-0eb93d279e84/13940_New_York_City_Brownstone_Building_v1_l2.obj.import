@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t764jtne18m4"
+path="res://.godot/imported/13940_New_York_City_Brownstone_Building_v1_l2.obj-b747070ea1c2cef9dcd2d9ac9ea2488d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/13940_New_York_City_Brownstone_Building_v1_l2.obj-b747070ea1c2cef9dcd2d9ac9ea2488d.mesh"]
+
+source_file="res://assets/New_York_City_Brownstone_Building_v1_L2.67178d22-059b-42f9-ab9d-0eb93d279e84/13940_New_York_City_Brownstone_Building_v1_l2.obj"
+dest_files=["res://.godot/imported/13940_New_York_City_Brownstone_Building_v1_l2.obj-b747070ea1c2cef9dcd2d9ac9ea2488d.mesh", "res://.godot/imported/13940_New_York_City_Brownstone_Building_v1_l2.obj-b747070ea1c2cef9dcd2d9ac9ea2488d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
