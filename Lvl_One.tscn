@@ -7,16 +7,16 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -0.0194836, 0.106958, 0.0389872)
+transform = Transform3D(25.085, 0, 0, 0, 25.085, 0, 0, 0, 25.085, -0.019, 0, 0.039)
 mesh = SubResource("PlaneMesh_41bof")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.0871558, 0.996195, 0, -0.996195, -0.0871558, 0.00440264, 7.02787, -0.00245523)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.907777, -0.298146, 0.29504, 0, 0.703395, 0.710799, -0.419452, -0.645248, 0.638526, 12.9538, 12.2366, 17.9788)
-fov = 36.0
+transform = Transform3D(0.72176, -0.431814, 0.540924, 6.83227e-08, 0.78152, 0.62388, -0.692143, -0.450291, 0.56407, 17.324, 21.219, 27.355)
+fov = 23.6
 
 [node name="13940NewYorkCityBrownstoneBuildingV1L2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.01, 8.74228e-10, 0, 3.82137e-17, 4.37114e-10, 0.01, 8.74228e-10, 0.01, -4.37114e-10, -12.1695, 0, 13.2966)
+transform = Transform3D(-0.01, 1.50996e-09, 6.60024e-17, 0, -4.37114e-10, 0.01, 1.50996e-09, 0.01, 4.37114e-10, -4.90771, -0.026619, 20.3931)
 mesh = ExtResource("1_qql4q")
