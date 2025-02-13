@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgru6uq2jgbb7"]
+
+[ext_resource type="PackedScene" uid="uid://b3lk11fk2qc1y" path="res://assets/sidewalk.glb" id="1_vk4i3"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_vk4i3")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, 0)
