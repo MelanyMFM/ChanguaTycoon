@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=30 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="PackedScene" uid="uid://drj5645g4pvb" path="res://assets/City Pack.undefined-glb/Building Green.glb" id="2_8l3an"]
@@ -10,11 +10,15 @@
 [ext_resource type="PackedScene" uid="uid://cdl1kkx00bglj" path="res://assets/City Pack.undefined-glb/Car.glb" id="7_05ll6"]
 [ext_resource type="PackedScene" uid="uid://bcw1d3caj83n8" path="res://assets/City Pack.undefined-glb/Car-unqqkULtRU.glb" id="8_ko1sy"]
 [ext_resource type="PackedScene" uid="uid://d367y3rmmkpju" path="res://assets/fryer/source/Fryer/Fryer.fbx" id="10_l45ym"]
+[ext_resource type="Script" path="res://character_body_3d.gd" id="11_l5bv2"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6a6it"]
 albedo_color = Color(0, 0.37, 0.0616666, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_77sdj"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_yql75"]
 
@@ -164,12 +168,23 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k8x06")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_17ia0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_u7q2n"]
+
+[sub_resource type="Skin" id="Skin_c6lhh"]
+
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(25.085, 0, 0, 0, 25.085, 0, 0, 0, 25, 0, 0, 0)
 mesh = SubResource("PlaneMesh_41bof")
 surface_material_override/0 = SubResource("StandardMaterial3D_6a6it")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D2"]
+shape = SubResource("ConcavePolygonShape3D_77sdj")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.34202, 0.939693, 0, -0.939693, 0.34202, 0.00440264, 7.02787, -0.00245523)
@@ -388,6 +403,19 @@ mesh = SubResource("ArrayMesh_fld8s")
 skeleton = NodePath("")
 
 [node name="Fryer" parent="." instance=ExtResource("10_l45ym")]
-transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, -0.521238, 0.401776, -0.77054)
+transform = Transform3D(-0.000256625, 0, -0.00499341, 0, 0.005, 0, 0.00499341, 0, -0.000256625, -0.903169, 0.0642416, -1.15883)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -1.56056, 0, -1.47023)
+script = ExtResource("11_l5bv2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.29606, 0)
+shape = SubResource("CapsuleShape3D_17ia0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.645, 0)
+mesh = SubResource("CapsuleMesh_u7q2n")
+skin = SubResource("Skin_c6lhh")
