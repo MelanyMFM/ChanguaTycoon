@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=35 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="PackedScene" uid="uid://drj5645g4pvb" path="res://assets/City Pack.undefined-glb/Building Green.glb" id="2_8l3an"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://d367y3rmmkpju" path="res://assets/fryer/source/Fryer/Fryer.fbx" id="10_l45ym"]
 [ext_resource type="Script" path="res://character_body_3d.gd" id="11_l5bv2"]
 [ext_resource type="PackedScene" uid="uid://dc8rkjrfy12bb" path="res://assets/City Pack.undefined-glb/Box.glb" id="12_ndy54"]
+[ext_resource type="PackedScene" uid="uid://t5sajbfbxwko" path="res://assets/City Pack.undefined-glb/ATM.glb" id="13_iy44g"]
+[ext_resource type="PackedScene" uid="uid://bomu3s2wt50b7" path="res://assets/City Pack.undefined-glb/Bench.glb" id="14_3qx56"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
 
@@ -186,7 +188,7 @@ ssil_intensity = 5.0
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(25.085, 0, 0, 0, 25.085, 0, 0, 0, 25, 0, 0, 0)
+transform = Transform3D(25.085, 0, 0, 0, 25.085, 0, 0, 0, 25, -0.00202483, -0.00504935, 0.00637239)
 mesh = SubResource("PlaneMesh_41bof")
 surface_material_override/0 = SubResource("StandardMaterial3D_6a6it")
 
@@ -440,4 +442,10 @@ mesh = SubResource("CapsuleMesh_u7q2n")
 skin = SubResource("Skin_c6lhh")
 
 [node name="Root Scene7" parent="." instance=ExtResource("12_ndy54")]
-transform = Transform3D(0.485, 0, 0, 0, 0.485, 0, 0, 0, 0.485, -1.72198, 0, -0.82939)
+transform = Transform3D(0.655, 0, 0, 0, 0.655, 0, 0, 0, 0.655, -0.799027, 0, -0.787582)
+
+[node name="Root Scene8" parent="." instance=ExtResource("13_iy44g")]
+transform = Transform3D(0.625, 0, 0, 0, 0.625, 0, 0, 0, 0.625, -1.17272, 0, -2.11362)
+
+[node name="Bench" parent="." instance=ExtResource("14_3qx56")]
+transform = Transform3D(0.00418689, 0, -0.0798904, 0, 0.08, 0, 0.0798904, 0, 0.00418689, -1.85701, 0.0608456, -0.907483)
