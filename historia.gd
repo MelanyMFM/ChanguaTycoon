@@ -3,6 +3,10 @@ extends CanvasLayer
 var imagenes: Array = [
 	"res://assets/historia/Start-screen.png",
 	"res://assets/historia/2screen.png",
+	"res://assets/historia/3screen.png",
+	"res://assets/historia/4screen.png",
+	"res://assets/historia/5screen.png",
+	"res://assets/historia/6screen.png"
 ]
 var indice_imagen: int = 0
 @onready var texture_rect: TextureRect = $TextureRect

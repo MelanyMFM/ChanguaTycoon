@@ -18,7 +18,7 @@ func _ready():
 	posicion_espera = Vector3(-0.718, 0.053, -0.973)  # Define la posición de espera (ajusta los valores)
 	posicion_final = posicion_inicial  # El cliente volverá a su posición inicial
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Registrar el tiempo de llegada
-	print("Dinero actual: $", Global.dinero)
+	Logger.log("Dinero actual: $" + str(Global.dinero))
 
 func _process(delta):
 	match estado:
@@ -32,19 +32,19 @@ func _process(delta):
 			if esta_pidiendo_changua:
 				var tiempo_actual = Time.get_ticks_msec() / 1000.0
 				if tiempo_actual - tiempo_llegada > tiempo_espera_maximo:
-					print("El cliente se fue insatisfecho.")
+					Logger.log("El cliente 2 se fue insatisfecho.")
 					estado = "caminando_a_final"
 
 		"caminando_a_final":
 			mover_hacia(posicion_final, delta)
 			if global_transform.origin.distance_to(posicion_final) < 0.1:
-				print("El cliente se fue.")
+				#Logger.log("El cliente se fue.")
 				repeticiones += 1  # Incrementar el contador de repeticiones
 				if repeticiones >= max_repeticiones:
 					#print("El cliente completó sus 5 repeticiones y se va.")
 					Global.clientes_restantes -= 1
 					if Global.clientes_restantes <= 0:
-						print("Nivel 1 acabado")
+						Logger.log("Nivel 1 acabado")
 		# Mostrar un mensaje o cambiar a una escena de fin de nivel
 						get_tree().change_scene_to_file("res://lvl1end.tscn")
 					queue_free()  # Eliminar al cliente de la escena
@@ -65,24 +65,23 @@ func reiniciar_cliente():
 	#print("El cliente comienza un nuevo ciclo. Repetición:", repeticiones + 1)
 
 func _on_area_3d_body_entered(body):
-	print(body.name)
 	if body.name == "CharacterBody3D":  # Cambia "CharacterBody3D" por "Jugador"
 		if estado == "esperando" and not esta_pidiendo_changua:
 			esta_pidiendo_changua = true
-			print("El cliente 2 está pidiendo changua.")
+			Logger.log("El cliente 2 está pidiendo changua.")
 		elif estado == "esperando" and esta_pidiendo_changua:
 			recibir_changua()
 
 func _on_estufa_changua_lista():
 	changua_lista = true
-	print("La changua está lista para entregar.")
+	Logger.log("La changua está lista para entregar.")
 
 func recibir_changua():
 	if Global.changuas_listas >= 1:  # Solo entregar si la changua está lista
 		entregar_changua()
 		estado = "caminando_a_final"  # Cambiar estado para que se vaya
 	else:
-		print("La changua no está lista todavía.")
+		Logger.log("La changua no está lista todavía.")
 
 func entregar_changua():
 	Global.changuas_listas -= 1
@@ -91,9 +90,10 @@ func entregar_changua():
 
 	if tiempo_espera <= tiempo_espera_maximo:
 		var satisfaccion = 1.0 - (tiempo_espera / tiempo_espera_maximo)
-		print("Changua entregada")
+		Logger.log("Changua entregada a cliente 2")
+		Logger.log("Parece que a cliente 2 le ha gustado (qué mal gusto)")
 		Global.dinero += int(satisfaccion * 100) 
-		print("Haz ganado $", satisfaccion * 100)
-		print("Dinero actual: $", Global.dinero)
+		Logger.log("Haz ganado $" + str( satisfaccion * 100))
+		Logger.log("Dinero actual: $"+str(Global.dinero))
 	else:
-		print("El cliente 2 se fue insatisfecho.")
+		Logger.log("El cliente 2 se fue insatisfecho.")

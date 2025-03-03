@@ -1,6 +1,7 @@
-[gd_scene load_steps=51 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=52 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
+[ext_resource type="Script" path="res://lvl_one.gd" id="1_x31x1"]
 [ext_resource type="PackedScene" uid="uid://drj5645g4pvb" path="res://assets/City Pack.undefined-glb/Building Green.glb" id="2_8l3an"]
 [ext_resource type="Texture2D" uid="uid://dttm4hhsqlrme" path="res://assets/sidewalk_1.jpg" id="2_w4thh"]
 [ext_resource type="PackedScene" uid="uid://dv23lnxphx5gu" path="res://assets/City Pack.undefined-glb/Building Red Corner.glb" id="2_w526a"]
@@ -214,6 +215,7 @@ height = 2.49201
 radius = 0.820569
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_x31x1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(25.085, 0, 0, 0, 25.085, 0, 0, 0, 25, -0.00202483, -0.00504935, 0.00637239)
@@ -406,7 +408,7 @@ mesh = SubResource("ArrayMesh_fld8s")
 skeleton = NodePath("")
 
 [node name="Root Scene" parent="Node3D7/Node3D4/Side_Walk_5_Block" instance=ExtResource("10_0ivc4")]
-transform = Transform3D(2.13163e-14, -3.88157e-08, -0.891, -0.888, -3.88157e-08, -1.42109e-14, -3.88157e-08, 0.888, -3.89468e-08, 12.1892, -5.54732, -0.115173)
+transform = Transform3D(3.55271e-14, -3.88157e-08, -0.891, -0.888, -3.88157e-08, -2.84217e-14, -3.88157e-08, 0.888, -3.89468e-08, 12.1892, -5.54732, -0.115172)
 
 [node name="Side_Walk_5_Block2" type="Node3D" parent="Node3D7/Node3D4"]
 transform = Transform3D(0.125425, 0, 0, 0, -5.4825e-09, 0.125425, 0, -0.125, -5.46392e-09, -0.928145, 0.00930378, -2.31738)
@@ -542,6 +544,12 @@ shape = SubResource("CapsuleShape3D_vbc8q")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D2/Area3D"]
 shape = SubResource("CapsuleShape3D_18kr5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
+offset_right = 458.0
+offset_bottom = 102.0
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]

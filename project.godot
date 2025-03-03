@@ -11,10 +11,11 @@ config_version=5
 [application]
 
 config/name="Changua Tycoon"
-run/main_scene="res://Lvl_One.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Global.gd"
+Logger="*res://Logger.gd"
