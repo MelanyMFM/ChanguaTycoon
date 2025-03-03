@@ -439,7 +439,7 @@ shape = SubResource("BoxShape3D_u5k2u")
 [node name="Area3D" type="Area3D" parent="Fryer"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fryer/Area3D"]
-transform = Transform3D(21.89, 0, 0, 0, 21.89, 0, 0, 0, 21.89, -0.715836, -3.1148, -2.76387)
+transform = Transform3D(17.605, 0, 0, 0, 17.605, 0, 0, 0, 17.605, -0.953583, -3.1148, -1.06174)
 shape = SubResource("BoxShape3D_qijyr")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
