@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnf5s3s26urb"]
+
+[ext_resource type="Script" path="res://lvl_1_end.gd" id="1_cyl8y"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_cyl8y")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 440.0
+offset_top = 263.0
+offset_right = 579.0
+offset_bottom = 286.0
+text = "NIvel 1 terminado"
+uppercase = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 412.0
+offset_top = 307.0
+offset_right = 638.0
+offset_bottom = 358.0
+text = "Volver al menú principal"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

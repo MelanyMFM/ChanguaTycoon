@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://byknqdkyd2kyc"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_56mj6"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_right = 0.022
+anchor_bottom = 0.044
+offset_right = 736.656
+offset_bottom = 500.488
+script = ExtResource("1_56mj6")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 70.0
+offset_right = 512.0
+offset_bottom = 99.0
+text = "CHANGUA TYCOON	"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 153.0
+offset_right = 523.0
+offset_bottom = 184.0
+text = "Iniciar Nuevo Juego"
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]

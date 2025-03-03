@@ -42,6 +42,11 @@ func _process(delta):
 				repeticiones += 1  # Incrementar el contador de repeticiones
 				if repeticiones >= max_repeticiones:
 					#print("El cliente completó sus 5 repeticiones y se va.")
+					Global.clientes_restantes -= 1
+					if Global.clientes_restantes <= 0:
+						print("Nivel 1 acabado")
+		# Mostrar un mensaje o cambiar a una escena de fin de nivel
+						get_tree().change_scene_to_file("res://lvl1end.tscn")
 					queue_free()  # Eliminar al cliente de la escena
 				else:
 					# Esperar entre 1 a 15 segundos
