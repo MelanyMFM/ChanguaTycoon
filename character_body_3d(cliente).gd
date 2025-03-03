@@ -57,14 +57,14 @@ func reiniciar_cliente():
 	esta_pidiendo_changua = false
 	changua_lista = false
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Reiniciar el tiempo de llegada
-	print("El cliente comienza un nuevo ciclo. Repetición:", repeticiones + 1)
+	#print("El cliente comienza un nuevo ciclo. Repetición:", repeticiones + 1)
 
 func _on_area_3d_body_entered(body):
 	print(body.name)
 	if body.name == "CharacterBody3D":  # Cambia "CharacterBody3D" por "Jugador"
 		if estado == "esperando" and not esta_pidiendo_changua:
 			esta_pidiendo_changua = true
-			print("El cliente está pidiendo changua.")
+			print("El cliente 2 está pidiendo changua.")
 		elif estado == "esperando" and esta_pidiendo_changua:
 			recibir_changua()
 
@@ -91,4 +91,4 @@ func entregar_changua():
 		print("Haz ganado $", satisfaccion * 100)
 		print("Dinero actual: $", Global.dinero)
 	else:
-		print("El cliente se fue insatisfecho.")
+		print("El cliente 2 se fue insatisfecho.")

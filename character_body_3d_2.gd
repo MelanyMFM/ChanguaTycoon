@@ -8,14 +8,14 @@ var tiempo_espera_maximo: float = 30  # Tiempo máximo que el cliente esperará
 var posicion_inicial: Vector3
 var posicion_espera: Vector3
 var posicion_final: Vector3
-var velocidad: float = 0.4  # Velocidad de movimiento del cliente
+var velocidad: float = 0.3  # Velocidad de movimiento del cliente
 var estado: String = "caminando_a_espera"  # Estado actual del cliente
 var repeticiones: int = 0  # Contador de repeticiones
 var max_repeticiones: int = 5  # Número máximo de repeticiones
 
 func _ready():
 	posicion_inicial = global_transform.origin  # Guardar la posición inicial
-	posicion_espera = Vector3(-1.386, 0.096, -2.03)  # Define la posición de espera (ajusta los valores)
+	posicion_espera = Vector3(-1.331, 0.096, -2.03)  # Define la posición de espera (ajusta los valores)
 	posicion_final = posicion_inicial  # El cliente volverá a su posición inicial
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Registrar el tiempo de llegada
 	print("Dinero actual: $", Global.dinero)
@@ -57,14 +57,14 @@ func reiniciar_cliente():
 	esta_pidiendo_changua = false
 	changua_lista = false
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Reiniciar el tiempo de llegada
-	print("El cliente comienza un nuevo ciclo. Repetición:", repeticiones + 1)
+	#print("El cliente comienza un nuevo ciclo. Repetición:", repeticiones + 1)
 
 func _on_area_3d_body_entered(body):
 	print(body.name)
 	if body.name == "CharacterBody3D":  # Cambia "CharacterBody3D" por "Jugador"
 		if estado == "esperando" and not esta_pidiendo_changua:
 			esta_pidiendo_changua = true
-			print("El cliente está pidiendo changua.")
+			print("El cliente 1 está pidiendo changua.")
 		elif estado == "esperando" and esta_pidiendo_changua:
 			recibir_changua()
 
@@ -91,4 +91,4 @@ func entregar_changua():
 		print("Haz ganado $", satisfaccion * 100)
 		print("Dinero actual: $", Global.dinero)
 	else:
-		print("El cliente se fue insatisfecho.")
+		print("El cliente 1 se fue insatisfecho.")
