@@ -8,7 +8,7 @@ var esta_cocinando: bool = false
 func empezar_a_cocinar():
 	esta_cocinando = true
 	print("Cocinando changua...")
-	await get_tree().create_timer(3.0).timeout # Espera a que el temporizador termine
+	await get_tree().create_timer(Global.cps).timeout # Espera a que el temporizador termine
 	esta_cocinando = false
 	print("Changua lista.")
 	Global.changuas_listas = Global.changuas_listas + 1

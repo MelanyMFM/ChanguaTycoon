@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=51 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="PackedScene" uid="uid://drj5645g4pvb" path="res://assets/City Pack.undefined-glb/Building Green.glb" id="2_8l3an"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cq2p8wjpvksj8" path="res://assets/City Pack.undefined-glb/Road Bits_citybits_texture.png" id="5_44pki"]
 [ext_resource type="PackedScene" uid="uid://cdl1kkx00bglj" path="res://assets/City Pack.undefined-glb/Car.glb" id="7_05ll6"]
 [ext_resource type="PackedScene" uid="uid://bcw1d3caj83n8" path="res://assets/City Pack.undefined-glb/Car-unqqkULtRU.glb" id="8_ko1sy"]
+[ext_resource type="PackedScene" uid="uid://dqoxy2gnvxfes" path="res://assets/City Pack.undefined-glb/Dumpster.glb" id="10_0ivc4"]
 [ext_resource type="PackedScene" uid="uid://d367y3rmmkpju" path="res://assets/fryer/source/Fryer/Fryer.fbx" id="10_l45ym"]
 [ext_resource type="Script" path="res://assets/fryer/source/Fryer/fryer.gd" id="11_h4bf4"]
 [ext_resource type="Script" path="res://character_body_3d.gd" id="11_l5bv2"]
@@ -16,6 +17,12 @@
 [ext_resource type="PackedScene" uid="uid://t5sajbfbxwko" path="res://assets/City Pack.undefined-glb/ATM.glb" id="13_iy44g"]
 [ext_resource type="PackedScene" uid="uid://bomu3s2wt50b7" path="res://assets/City Pack.undefined-glb/Bench.glb" id="14_3qx56"]
 [ext_resource type="Script" path="res://character_body_3d(cliente).gd" id="15_dhirp"]
+[ext_resource type="PackedScene" uid="uid://bbg07hd085c3v" path="res://assets/City Pack.undefined-glb/Cone.glb" id="18_egd6m"]
+[ext_resource type="PackedScene" uid="uid://b32hhh38i6ew1" path="res://assets/City Pack.undefined-glb/Debris Papers.glb" id="19_td2ya"]
+[ext_resource type="PackedScene" uid="uid://botqoslktiwk7" path="res://assets/City Pack.undefined-glb/Traffic Light.glb" id="20_bo0as"]
+[ext_resource type="PackedScene" uid="uid://doluy65cilxgw" path="res://assets/City Pack.undefined-glb/trah bag grey.glb" id="21_jsl08"]
+[ext_resource type="PackedScene" uid="uid://bxox8unsy0cuw" path="res://assets/City Pack.undefined-glb/Bicycle.glb" id="22_p4ne5"]
+[ext_resource type="Script" path="res://character_body_3d_2.gd" id="23_pih84"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
 
@@ -192,8 +199,19 @@ ssil_intensity = 5.0
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_t8cdc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_84dj6"]
+radius = 0.567973
+height = 2.19233
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c4qfx"]
+radius = 0.632907
+height = 2.49201
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sahrc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vbc8q"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_18kr5"]
+radius = 0.820569
 
 [node name="Node3D" type="Node3D"]
 
@@ -387,6 +405,9 @@ skeleton = NodePath("")
 mesh = SubResource("ArrayMesh_fld8s")
 skeleton = NodePath("")
 
+[node name="Root Scene" parent="Node3D7/Node3D4/Side_Walk_5_Block" instance=ExtResource("10_0ivc4")]
+transform = Transform3D(2.13163e-14, -3.88157e-08, -0.891, -0.888, -3.88157e-08, -1.42109e-14, -3.88157e-08, 0.888, -3.89468e-08, 12.1892, -5.54732, -0.115173)
+
 [node name="Side_Walk_5_Block2" type="Node3D" parent="Node3D7/Node3D4"]
 transform = Transform3D(0.125425, 0, 0, 0, -5.4825e-09, 0.125425, 0, -0.125, -5.46392e-09, -0.928145, 0.00930378, -2.31738)
 
@@ -468,7 +489,7 @@ transform = Transform3D(0.625, 0, 0, 0, 0.625, 0, 0, 0, 0.625, -1.17272, 0, -2.1
 transform = Transform3D(0.00418689, 0, -0.0798904, 0, 0.08, 0, 0.0798904, 0, 0.00418689, -1.85701, 0.0608456, -0.907483)
 
 [node name="CharacterBody3D(Cliente)" type="CharacterBody3D" parent="."]
-transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -0.60563, 0.0859293, -0.972889)
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -0.0734233, 0.0533526, -0.972889)
 script = ExtResource("15_dhirp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D(Cliente)"]
@@ -476,15 +497,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.471233, 0.495296, -0.326979
 mesh = SubResource("CapsuleMesh_t8cdc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D(Cliente)"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.415005, 0.482563, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51147, 0.482563, 0)
 shape = SubResource("CapsuleShape3D_84dj6")
 
 [node name="Area3D" type="Area3D" parent="CharacterBody3D(Cliente)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.168796, 0.311745, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D(Cliente)/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.574792, 0.416084, -0.572678)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.598714, 0.280251, -0.572679)
 shape = SubResource("CapsuleShape3D_c4qfx")
+
+[node name="Cone" parent="." instance=ExtResource("18_egd6m")]
+transform = Transform3D(0.115, 0, 0, 0, 0.115, 0, 0, 0, 0.115, -0.969612, 0.0246201, -0.65214)
+
+[node name="Root Scene9" parent="." instance=ExtResource("19_td2ya")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -0.925821, -0.00504935, -1.8501)
+
+[node name="Root Scene10" parent="." instance=ExtResource("19_td2ya")]
+transform = Transform3D(0.146046, 0, -0.129211, 0, 0.195, 0, 0.129211, 0, 0.146046, -1.26886, -0.005, -1.85263)
+
+[node name="Root Scene11" parent="." instance=ExtResource("20_bo0as")]
+transform = Transform3D(-0.00855932, 0, 0.169784, 0, 0.17, 0, -0.169784, 0, -0.00855932, -1.86349, -0.00504944, -0.686728)
+
+[node name="trah bag grey" parent="." instance=ExtResource("21_jsl08")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -2.10796, 0.0875769, -1.35699)
+
+[node name="trah bag grey2" parent="." instance=ExtResource("21_jsl08")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, -6.46929e-08, 0, 6.46929e-08, 0.37, -1.05338, 0.0465206, -2.17397)
+
+[node name="Bicycle" parent="." instance=ExtResource("22_p4ne5")]
+transform = Transform3D(0.00419054, 0, 0.0748828, 0, 0.075, 0, -0.0748828, 0, 0.00419054, -2.05154, -0.00504935, -1.14217)
+
+[node name="CharacterBody3D2" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, -2.07875, 0.0961456, -2.06538)
+script = ExtResource("23_pih84")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D2"]
+mesh = SubResource("CapsuleMesh_sahrc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D2"]
+shape = SubResource("CapsuleShape3D_vbc8q")
+
+[node name="Area3D" type="Area3D" parent="CharacterBody3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D2/Area3D"]
+shape = SubResource("CapsuleShape3D_18kr5")
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]
 [connection signal="body_entered" from="CharacterBody3D(Cliente)/Area3D" to="CharacterBody3D(Cliente)" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="CharacterBody3D2/Area3D" to="CharacterBody3D2" method="_on_area_3d_body_entered"]

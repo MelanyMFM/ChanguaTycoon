@@ -15,7 +15,7 @@ var max_repeticiones: int = 5  # Número máximo de repeticiones
 
 func _ready():
 	posicion_inicial = global_transform.origin  # Guardar la posición inicial
-	posicion_espera = Vector3(-0.718, 0.053, -0.973)  # Define la posición de espera (ajusta los valores)
+	posicion_espera = Vector3(-1.386, 0.096, -2.03)  # Define la posición de espera (ajusta los valores)
 	posicion_final = posicion_inicial  # El cliente volverá a su posición inicial
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Registrar el tiempo de llegada
 	print("Dinero actual: $", Global.dinero)
