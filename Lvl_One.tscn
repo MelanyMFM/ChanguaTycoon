@@ -607,8 +607,12 @@ shape = SubResource("SphereShape3D_3ep64")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
-offset_right = 458.0
-offset_bottom = 102.0
+offset_right = 454.0
+offset_bottom = 110.0
+editable = false
+selecting_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
 
 [node name="Table" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -1.3255, -0.00172448, -0.929315)
@@ -793,6 +797,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18505, 0, -0.952446)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AreaAtencionCliente"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.143191, -0.140625, -0.0416034)
 shape = SubResource("BoxShape3D_wpoof")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer2"]
+offset_left = 729.0
+offset_top = -1.0
+offset_right = 1120.0
+offset_bottom = 37.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2"]
+offset_top = -1.0
+offset_right = 40.0
+offset_bottom = 39.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/HBoxContainer"]
+layout_mode = 2
+
+[node name="DineroLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
+layout_mode = 2
+offset_left = 745.0
+offset_top = 1.0
+offset_right = 815.0
+offset_bottom = 58.0
+
+[node name="ChanguasLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
+layout_mode = 0
+offset_left = 921.0
+offset_top = 1.0
+offset_right = 975.0
+offset_bottom = 45.0
+
+[node name="CpsLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
+layout_mode = 0
+offset_left = 1053.0
+offset_top = 1.0
+offset_right = 1101.0
+offset_bottom = 40.0
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]

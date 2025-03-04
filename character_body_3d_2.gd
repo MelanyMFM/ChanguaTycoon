@@ -48,7 +48,8 @@ func _process(delta):
 			# Verificar si el cliente esperó demasiado tiempo
 			var tiempo_actual = Time.get_ticks_msec() / 1000.0
 			if tiempo_actual - tiempo_llegada > tiempo_espera_maximo:
-				Logger.log("[Cliente] El cliente esperó demasiado y se va insatisfecho.")
+				print("[Cliente] El cliente esperó demasiado y se va insatisfecho.")
+				Logger.log("El cliente esperó demasiado y se va insatisfecho.")
 				estado = "caminando_a_final"
 
 		"caminando_a_final":
@@ -56,10 +57,10 @@ func _process(delta):
 			plato.visible = false
 			if global_transform.origin.distance_to(posicion_final) < 0.1:
 				repeticiones += 1  # Contar una repetición
-				Logger.log("[Cliente] Cliente regresó a su posición inicial. Repetición: " + str(repeticiones))
+				print("[Cliente] Cliente regresó a su posición inicial. Repetición: " + str(repeticiones))
 				
 				if repeticiones >= max_repeticiones:
-					Logger.log("[Cliente] Cliente ha completado todas sus repeticiones y abandona el juego.")
+					print("[Cliente] Cliente ha completado todas sus repeticiones y abandona el juego.")
 					Global.clientes_restantes -= 1
 					if Global.clientes_restantes <= 0:
 						Logger.log("Nivel 1 acabado")
@@ -86,32 +87,34 @@ func pedir_changua():
 	esta_pidiendo_changua = true
 	plato.visible = true
 	plato.look_at(camera.global_transform.origin, Vector3.UP)
-	Logger.log("[Cliente] Cliente llegó a la zona de espera y está pidiendo changua.")
+	print("[Cliente] Cliente llegó a la zona de espera y está pidiendo changua.")
+	Logger.log("Un cliente está pidiendo Changua")
 
 func _on_area_atencion_cliente_area_entered(area: Area3D):
 	if area.name == "AreaJugador":
 		jugador_en_area = true
-		Logger.log("[Cliente] El jugador ha entrado en la zona de atención del cliente.")
+		print("[Cliente] El jugador ha entrado en la zona de atención del cliente.")
 
 func _on_area_atencion_cliente_area_exited(area: Area3D):
 	if area.name == "AreaJugador":
 		jugador_en_area = false
-		Logger.log("[Cliente] El jugador ha salido de la zona de atención del cliente.")
+		print("[Cliente] El jugador ha salido de la zona de atención del cliente.")
 
 func _on_cliente_clicked(viewport, event, position, normal, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if jugador_en_area:
-			Logger.log("[Cliente] El jugador ha hecho clic en el cliente para entregarle la changua.")
+			print("[Cliente] El jugador ha hecho clic en el cliente para entregarle la changua.")
 			recibir_changua()
 		else:
-			Logger.log("[Cliente] El jugador intentó interactuar con el cliente, pero está fuera del área de atención.")
+			print("[Cliente] El jugador intentó interactuar con el cliente, pero está fuera del área de atención.")
 
 func recibir_changua():
 	if Global.changuas_listas >= 1:
 		entregar_changua()
 		estado = "caminando_a_final"
 	else:
-		Logger.log("[Cliente] El jugador intentó entregar changua, pero no hay ninguna lista.")
+		print("[Cliente] El jugador intentó entregar changua, pero no hay ninguna lista.")
+		Logger.log("No puedes entregar, no hay changuas listas")
 
 func entregar_changua():
 	Global.changuas_listas -= 1
@@ -120,13 +123,17 @@ func entregar_changua():
 
 	if tiempo_espera <= tiempo_espera_maximo:
 		var satisfaccion = 1.0 - (tiempo_espera / tiempo_espera_maximo)
-		Logger.log("[Cliente] Changua entregada exitosamente.")
-		Logger.log("[Cliente] Nivel de satisfacción: " + str(satisfaccion))
+		print("[Cliente] Changua entregada exitosamente.")
+		Logger.log("Entregaste la changua exitosamente")
+		Logger.log("Parece que al cliente le gustó (qué mal gusto)")
+		print("[Cliente] Nivel de satisfacción: " + str(satisfaccion))
 		Global.dinero += int(satisfaccion * 100) 
-		Logger.log("[Cliente] El jugador ha ganado $" + str(satisfaccion * 100))
-		Logger.log("[Cliente] Dinero actual: $" + str(Global.dinero))
+		print("[Cliente] El jugador ha ganado $" + str(satisfaccion * 100))
+		Logger.log("Haz ganado $" + str(satisfaccion * 100))
+		print("[Cliente] Dinero actual: $" + str(Global.dinero))
 	else:
-		Logger.log("[Cliente] El cliente se fue insatisfecho porque esperó demasiado tiempo.")
+		print("[Cliente] El cliente se fue insatisfecho porque esperó demasiado tiempo.")
+		Logger.log("El cliente se fué insatisfecho porque esperó demasiado tiempo :(")
 
 	plato.visible = false
 
@@ -135,4 +142,4 @@ func reiniciar_cliente():
 	esta_pidiendo_changua = false
 	changua_lista = false
 	tiempo_llegada = Time.get_ticks_msec() / 1000.0  # Reiniciar el tiempo de llegada
-	Logger.log("[Cliente] Cliente reinicia su ciclo. Repetición: " + str(repeticiones))
+	print("[Cliente] Cliente reinicia su ciclo. Repetición: " + str(repeticiones))

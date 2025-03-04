@@ -2,27 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkegn7swa1b61"
-path.s3tc="res://.godot/imported/colormap.png-05bc4cb15cf4debe1cc779cfa7353bfb.s3tc.ctex"
+uid="uid://4gjudk3c7flu"
+path="res://.godot/imported/colormap.png-6a7ae3154f63e7e5153295c61941bb67.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_food-kit/Models/FBX format/Textures/colormap.png"
-dest_files=["res://.godot/imported/colormap.png-05bc4cb15cf4debe1cc779cfa7353bfb.s3tc.ctex"]
+source_file="res://assets/kenney_food-kit/Models/GLB format/Textures/colormap.png"
+dest_files=["res://.godot/imported/colormap.png-6a7ae3154f63e7e5153295c61941bb67.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
