@@ -609,6 +609,7 @@ shape = SubResource("SphereShape3D_3ep64")
 [node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
 offset_right = 454.0
 offset_bottom = 110.0
+mouse_force_pass_scroll_events = false
 editable = false
 selecting_enabled = false
 virtual_keyboard_enabled = false
