@@ -1,10 +1,16 @@
 extends CharacterBody3D
 
-const SPEED = .5
-
+const SPEED = .5  # Ajusta la velocidad según sea necesario
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var target_position: Vector3 = Vector3.ZERO
 var is_moving: bool = false
+
+# Referencia al AnimationPlayer
+@onready var animation_player: AnimationPlayer = $"character-male-a2/AnimationPlayer"
+
+func _ready():
+	# Reproducir la animación de idle al inicio
+	animation_player.play("idle")
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -24,8 +30,12 @@ func _input(event):
 func _physics_process(delta):
 	if is_moving:
 		_movement(delta)
+	else:
+		# Si no se está moviendo, reproducir la animación de idle
+		if animation_player.current_animation != "idle":
+			animation_player.play("idle")
+	
 	_gravity(delta)
-	# _jump()  // Eliminamos la llamada a _jump()
 
 func _movement(delta):
 	var direction = (target_position - global_transform.origin).normalized()
@@ -34,6 +44,13 @@ func _movement(delta):
 	if global_transform.origin.distance_to(target_position) > 0.1:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		
+		# Rotar el personaje hacia la dirección de movimiento
+		look_at(target_position, Vector3.UP)
+		
+		# Reproducir la animación de caminar
+		if animation_player.current_animation != "walk":  # Asegúrate de que "walk" sea el nombre correcto de la animación
+			animation_player.play("walk")
 	else:
 		# Detener el movimiento cuando llegue cerca del objetivo
 		velocity.x = 0

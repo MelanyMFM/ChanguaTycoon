@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://r581sji70cqv"
+path="res://.godot/imported/stoolBarSquare.obj-e71b5cf2ede277f1cdb812b4ae992666.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stoolBarSquare.obj-e71b5cf2ede277f1cdb812b4ae992666.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/stoolBarSquare.obj"
+dest_files=["res://.godot/imported/stoolBarSquare.obj-e71b5cf2ede277f1cdb812b4ae992666.mesh", "res://.godot/imported/stoolBarSquare.obj-e71b5cf2ede277f1cdb812b4ae992666.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6uovcuk4lctv"
+path="res://.godot/imported/crate_carrots.obj-451e2c162e3598d4d3e5bb4b90d86ad9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crate_carrots.obj-451e2c162e3598d4d3e5bb4b90d86ad9.mesh"]
+
+source_file="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_carrots.obj"
+dest_files=["res://.godot/imported/crate_carrots.obj-451e2c162e3598d4d3e5bb4b90d86ad9.mesh", "res://.godot/imported/crate_carrots.obj-451e2c162e3598d4d3e5bb4b90d86ad9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

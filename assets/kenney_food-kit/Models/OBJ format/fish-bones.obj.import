@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dmh3gessc7bxj"
+path="res://.godot/imported/fish-bones.obj-96ca67766856ecccbb4270f3e66cf80e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fish-bones.obj-96ca67766856ecccbb4270f3e66cf80e.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/fish-bones.obj"
+dest_files=["res://.godot/imported/fish-bones.obj-96ca67766856ecccbb4270f3e66cf80e.mesh", "res://.godot/imported/fish-bones.obj-96ca67766856ecccbb4270f3e66cf80e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

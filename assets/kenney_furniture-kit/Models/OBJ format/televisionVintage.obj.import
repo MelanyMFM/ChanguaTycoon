@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bn5xsuvdo5vs0"
+path="res://.godot/imported/televisionVintage.obj-0adf0d7670078bd1d1125f44cdf770be.mesh"
+
+[deps]
+
+files=["res://.godot/imported/televisionVintage.obj-0adf0d7670078bd1d1125f44cdf770be.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/televisionVintage.obj"
+dest_files=["res://.godot/imported/televisionVintage.obj-0adf0d7670078bd1d1125f44cdf770be.mesh", "res://.godot/imported/televisionVintage.obj-0adf0d7670078bd1d1125f44cdf770be.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

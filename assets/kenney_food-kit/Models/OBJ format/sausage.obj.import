@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://coieq0sui7fqb"
+path="res://.godot/imported/sausage.obj-b113aad0c5b0d38bf6679a80795308f9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sausage.obj-b113aad0c5b0d38bf6679a80795308f9.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/sausage.obj"
+dest_files=["res://.godot/imported/sausage.obj-b113aad0c5b0d38bf6679a80795308f9.mesh", "res://.godot/imported/sausage.obj-b113aad0c5b0d38bf6679a80795308f9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

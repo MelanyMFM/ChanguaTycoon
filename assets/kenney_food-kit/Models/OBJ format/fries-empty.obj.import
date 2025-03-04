@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bopaynrs22jks"
+path="res://.godot/imported/fries-empty.obj-bbf460fc444f4499ad28872dc1b9c75c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fries-empty.obj-bbf460fc444f4499ad28872dc1b9c75c.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/fries-empty.obj"
+dest_files=["res://.godot/imported/fries-empty.obj-bbf460fc444f4499ad28872dc1b9c75c.mesh", "res://.godot/imported/fries-empty.obj-bbf460fc444f4499ad28872dc1b9c75c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

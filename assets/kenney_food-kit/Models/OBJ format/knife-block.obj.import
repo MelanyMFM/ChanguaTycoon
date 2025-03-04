@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bek0kcu3s562i"
+path="res://.godot/imported/knife-block.obj-c4ab74e6dc1b287497a1430b37f8de80.mesh"
+
+[deps]
+
+files=["res://.godot/imported/knife-block.obj-c4ab74e6dc1b287497a1430b37f8de80.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/knife-block.obj"
+dest_files=["res://.godot/imported/knife-block.obj-c4ab74e6dc1b287497a1430b37f8de80.mesh", "res://.godot/imported/knife-block.obj-c4ab74e6dc1b287497a1430b37f8de80.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jj4t5b4qoyeb"
+path="res://.godot/imported/steamer.obj-4646055b46ee0d001cd6aedd7ab28293.mesh"
+
+[deps]
+
+files=["res://.godot/imported/steamer.obj-4646055b46ee0d001cd6aedd7ab28293.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/steamer.obj"
+dest_files=["res://.godot/imported/steamer.obj-4646055b46ee0d001cd6aedd7ab28293.mesh", "res://.godot/imported/steamer.obj-4646055b46ee0d001cd6aedd7ab28293.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

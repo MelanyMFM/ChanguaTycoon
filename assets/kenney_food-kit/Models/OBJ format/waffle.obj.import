@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyh5od52124y5"
+path="res://.godot/imported/waffle.obj-e5857d54bfe8fa124279432e5de81b5a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/waffle.obj-e5857d54bfe8fa124279432e5de81b5a.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/waffle.obj"
+dest_files=["res://.godot/imported/waffle.obj-e5857d54bfe8fa124279432e5de81b5a.mesh", "res://.godot/imported/waffle.obj-e5857d54bfe8fa124279432e5de81b5a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

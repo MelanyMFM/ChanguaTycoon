@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dd6mv4gefskxa"
+path="res://.godot/imported/food_dinner.obj-38d27923f8509b28b0192c05746580f4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/food_dinner.obj-38d27923f8509b28b0192c05746580f4.mesh"]
+
+source_file="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/food_dinner.obj"
+dest_files=["res://.godot/imported/food_dinner.obj-38d27923f8509b28b0192c05746580f4.mesh", "res://.godot/imported/food_dinner.obj-38d27923f8509b28b0192c05746580f4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xumu1a8qopkb"
+path="res://.godot/imported/ice-cream.obj-d264abac34cdefb22d91b11d82a019cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ice-cream.obj-d264abac34cdefb22d91b11d82a019cc.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/ice-cream.obj"
+dest_files=["res://.godot/imported/ice-cream.obj-d264abac34cdefb22d91b11d82a019cc.mesh", "res://.godot/imported/ice-cream.obj-d264abac34cdefb22d91b11d82a019cc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

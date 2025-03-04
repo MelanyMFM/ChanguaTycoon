@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dffvcg4yggc4d"
+path="res://.godot/imported/chinese.obj-e53f557e77a2941e096101c355cd2713.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chinese.obj-e53f557e77a2941e096101c355cd2713.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/chinese.obj"
+dest_files=["res://.godot/imported/chinese.obj-e53f557e77a2941e096101c355cd2713.mesh", "res://.godot/imported/chinese.obj-e53f557e77a2941e096101c355cd2713.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwipqdcrs12iu"
+path="res://.godot/imported/cookie-chocolate.obj-98b68ab2cf867df1fc625c93615678e1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cookie-chocolate.obj-98b68ab2cf867df1fc625c93615678e1.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/cookie-chocolate.obj"
+dest_files=["res://.godot/imported/cookie-chocolate.obj-98b68ab2cf867df1fc625c93615678e1.mesh", "res://.godot/imported/cookie-chocolate.obj-98b68ab2cf867df1fc625c93615678e1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

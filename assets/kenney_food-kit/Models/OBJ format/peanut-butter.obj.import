@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqy5negyj40ea"
+path="res://.godot/imported/peanut-butter.obj-1ce8d97e6259f84f25503ee255595d6e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/peanut-butter.obj-1ce8d97e6259f84f25503ee255595d6e.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/peanut-butter.obj"
+dest_files=["res://.godot/imported/peanut-butter.obj-1ce8d97e6259f84f25503ee255595d6e.mesh", "res://.godot/imported/peanut-butter.obj-1ce8d97e6259f84f25503ee255595d6e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

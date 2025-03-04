@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b34andady6t4t"
+path="res://.godot/imported/tajine-lid.obj-7ef31f91d2654eab4b914393e47654e0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tajine-lid.obj-7ef31f91d2654eab4b914393e47654e0.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/tajine-lid.obj"
+dest_files=["res://.godot/imported/tajine-lid.obj-7ef31f91d2654eab4b914393e47654e0.mesh", "res://.godot/imported/tajine-lid.obj-7ef31f91d2654eab4b914393e47654e0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

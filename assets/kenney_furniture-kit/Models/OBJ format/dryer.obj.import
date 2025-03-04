@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpouh28bhgp4m"
+path="res://.godot/imported/dryer.obj-718bc58d3587bc47ed2c2cfbd7b170d8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/dryer.obj-718bc58d3587bc47ed2c2cfbd7b170d8.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/dryer.obj"
+dest_files=["res://.godot/imported/dryer.obj-718bc58d3587bc47ed2c2cfbd7b170d8.mesh", "res://.godot/imported/dryer.obj-718bc58d3587bc47ed2c2cfbd7b170d8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

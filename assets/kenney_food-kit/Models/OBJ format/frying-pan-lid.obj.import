@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bw8a38helh4gw"
+path="res://.godot/imported/frying-pan-lid.obj-be0bd4e9b75794f9782ff1972b9ad3db.mesh"
+
+[deps]
+
+files=["res://.godot/imported/frying-pan-lid.obj-be0bd4e9b75794f9782ff1972b9ad3db.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/frying-pan-lid.obj"
+dest_files=["res://.godot/imported/frying-pan-lid.obj-be0bd4e9b75794f9782ff1972b9ad3db.mesh", "res://.godot/imported/frying-pan-lid.obj-be0bd4e9b75794f9782ff1972b9ad3db.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

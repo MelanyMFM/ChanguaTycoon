@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0wt5fo5ura4d"
+path="res://.godot/imported/doorwayFront.obj-b370f38eb8ca5bf3fca306fdaad07a39.mesh"
+
+[deps]
+
+files=["res://.godot/imported/doorwayFront.obj-b370f38eb8ca5bf3fca306fdaad07a39.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/doorwayFront.obj"
+dest_files=["res://.godot/imported/doorwayFront.obj-b370f38eb8ca5bf3fca306fdaad07a39.mesh", "res://.godot/imported/doorwayFront.obj-b370f38eb8ca5bf3fca306fdaad07a39.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

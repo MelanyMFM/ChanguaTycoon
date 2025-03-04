@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxumcwvebb81u"
+path="res://.godot/imported/wallWindowSlide.obj-7f756b477fe8dab390fd742a51c579d6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallWindowSlide.obj-7f756b477fe8dab390fd742a51c579d6.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/wallWindowSlide.obj"
+dest_files=["res://.godot/imported/wallWindowSlide.obj-7f756b477fe8dab390fd742a51c579d6.mesh", "res://.godot/imported/wallWindowSlide.obj-7f756b477fe8dab390fd742a51c579d6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

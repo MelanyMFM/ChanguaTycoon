@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://i6wvy3o7h8nt"
+path="res://.godot/imported/pudding.obj-99b393f56116cb7fe77f2d974afe0eff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pudding.obj-99b393f56116cb7fe77f2d974afe0eff.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/pudding.obj"
+dest_files=["res://.godot/imported/pudding.obj-99b393f56116cb7fe77f2d974afe0eff.mesh", "res://.godot/imported/pudding.obj-99b393f56116cb7fe77f2d974afe0eff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

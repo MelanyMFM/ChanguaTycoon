@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://nxm4p56jc43m"
+path="res://.godot/imported/pie.obj-87525c9de172264c47eca9028286a462.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pie.obj-87525c9de172264c47eca9028286a462.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/pie.obj"
+dest_files=["res://.godot/imported/pie.obj-87525c9de172264c47eca9028286a462.mesh", "res://.godot/imported/pie.obj-87525c9de172264c47eca9028286a462.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

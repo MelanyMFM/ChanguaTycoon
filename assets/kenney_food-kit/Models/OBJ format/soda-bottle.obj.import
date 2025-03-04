@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsvvhof0t31ue"
+path="res://.godot/imported/soda-bottle.obj-6fa0a7e0fd2eab487c47ed4f8aff9c73.mesh"
+
+[deps]
+
+files=["res://.godot/imported/soda-bottle.obj-6fa0a7e0fd2eab487c47ed4f8aff9c73.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/soda-bottle.obj"
+dest_files=["res://.godot/imported/soda-bottle.obj-6fa0a7e0fd2eab487c47ed4f8aff9c73.mesh", "res://.godot/imported/soda-bottle.obj-6fa0a7e0fd2eab487c47ed4f8aff9c73.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

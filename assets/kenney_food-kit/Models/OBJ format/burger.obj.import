@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn8kl731ohtis"
+path="res://.godot/imported/burger.obj-12ec5c7a1795ace24e84fa4d18baaace.mesh"
+
+[deps]
+
+files=["res://.godot/imported/burger.obj-12ec5c7a1795ace24e84fa4d18baaace.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/burger.obj"
+dest_files=["res://.godot/imported/burger.obj-12ec5c7a1795ace24e84fa4d18baaace.mesh", "res://.godot/imported/burger.obj-12ec5c7a1795ace24e84fa4d18baaace.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

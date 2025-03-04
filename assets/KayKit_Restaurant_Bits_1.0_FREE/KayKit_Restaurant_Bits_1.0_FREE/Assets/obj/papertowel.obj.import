@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c63jgc0iefa6g"
+path="res://.godot/imported/papertowel.obj-872cd281ff089765a0d18e7578231717.mesh"
+
+[deps]
+
+files=["res://.godot/imported/papertowel.obj-872cd281ff089765a0d18e7578231717.mesh"]
+
+source_file="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/papertowel.obj"
+dest_files=["res://.godot/imported/papertowel.obj-872cd281ff089765a0d18e7578231717.mesh", "res://.godot/imported/papertowel.obj-872cd281ff089765a0d18e7578231717.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

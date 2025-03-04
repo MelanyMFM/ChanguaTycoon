@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chp8dmvv2xqtl"
+path="res://.godot/imported/onion-half.obj-4396627339ceec073bc8a9e20e934f3f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/onion-half.obj-4396627339ceec073bc8a9e20e934f3f.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/onion-half.obj"
+dest_files=["res://.godot/imported/onion-half.obj-4396627339ceec073bc8a9e20e934f3f.mesh", "res://.godot/imported/onion-half.obj-4396627339ceec073bc8a9e20e934f3f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
