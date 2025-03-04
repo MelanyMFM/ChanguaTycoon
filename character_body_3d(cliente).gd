@@ -97,3 +97,7 @@ func entregar_changua():
 		Logger.log("Dinero actual: $"+str(Global.dinero))
 	else:
 		Logger.log("El cliente 2 se fue insatisfecho.")
+
+
+func _on_area_atencion_cliente_area_entered(area: Area3D) -> void:
+	pass # Replace with function body.

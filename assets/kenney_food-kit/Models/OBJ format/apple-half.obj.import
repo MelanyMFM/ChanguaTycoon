@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3h2sh1ncayg4"
+path="res://.godot/imported/apple-half.obj-a8b23670320a3f204339d7af34b5346c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/apple-half.obj-a8b23670320a3f204339d7af34b5346c.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/apple-half.obj"
+dest_files=["res://.godot/imported/apple-half.obj-a8b23670320a3f204339d7af34b5346c.mesh", "res://.godot/imported/apple-half.obj-a8b23670320a3f204339d7af34b5346c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

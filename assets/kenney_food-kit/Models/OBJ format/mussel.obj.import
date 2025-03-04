@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctgdnh5b2p7qs"
+path="res://.godot/imported/mussel.obj-fb3669d05f092bab9581c0c84e9caaef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mussel.obj-fb3669d05f092bab9581c0c84e9caaef.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/mussel.obj"
+dest_files=["res://.godot/imported/mussel.obj-fb3669d05f092bab9581c0c84e9caaef.mesh", "res://.godot/imported/mussel.obj-fb3669d05f092bab9581c0c84e9caaef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

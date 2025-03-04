@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b57fwnhgn8drq"
+path="res://.godot/imported/leek.obj-4424e3622044b91da2d1f55b95526ee9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/leek.obj-4424e3622044b91da2d1f55b95526ee9.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/leek.obj"
+dest_files=["res://.godot/imported/leek.obj-4424e3622044b91da2d1f55b95526ee9.mesh", "res://.godot/imported/leek.obj-4424e3622044b91da2d1f55b95526ee9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

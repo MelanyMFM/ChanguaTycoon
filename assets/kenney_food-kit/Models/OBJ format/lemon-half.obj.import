@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0kiskdkyli3v"
+path="res://.godot/imported/lemon-half.obj-3b18d87cb37aebd6c906b2bcf168acac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lemon-half.obj-3b18d87cb37aebd6c906b2bcf168acac.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/lemon-half.obj"
+dest_files=["res://.godot/imported/lemon-half.obj-3b18d87cb37aebd6c906b2bcf168acac.mesh", "res://.godot/imported/lemon-half.obj-3b18d87cb37aebd6c906b2bcf168acac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

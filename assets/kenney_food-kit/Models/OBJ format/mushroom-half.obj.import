@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://do07yg8vpq6da"
+path="res://.godot/imported/mushroom-half.obj-abe190841cbdab9b6ca18b6a727b6c0a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mushroom-half.obj-abe190841cbdab9b6ca18b6a727b6c0a.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/mushroom-half.obj"
+dest_files=["res://.godot/imported/mushroom-half.obj-abe190841cbdab9b6ca18b6a727b6c0a.mesh", "res://.godot/imported/mushroom-half.obj-abe190841cbdab9b6ca18b6a727b6c0a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

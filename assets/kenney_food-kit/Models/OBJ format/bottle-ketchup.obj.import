@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cas1ychp0de35"
+path="res://.godot/imported/bottle-ketchup.obj-df81453b56a8db2a44b09a63f3927cbf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bottle-ketchup.obj-df81453b56a8db2a44b09a63f3927cbf.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/bottle-ketchup.obj"
+dest_files=["res://.godot/imported/bottle-ketchup.obj-df81453b56a8db2a44b09a63f3927cbf.mesh", "res://.godot/imported/bottle-ketchup.obj-df81453b56a8db2a44b09a63f3927cbf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

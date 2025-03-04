@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yht1ujxbv0k0"
+path="res://.godot/imported/barrel.obj-e35b3efe662a7d46e3f54c95bcb8cae3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/barrel.obj-e35b3efe662a7d46e3f54c95bcb8cae3.mesh"]
+
+source_file="res://assets/kenney_food-kit/Models/OBJ format/barrel.obj"
+dest_files=["res://.godot/imported/barrel.obj-e35b3efe662a7d46e3f54c95bcb8cae3.mesh", "res://.godot/imported/barrel.obj-e35b3efe662a7d46e3f54c95bcb8cae3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

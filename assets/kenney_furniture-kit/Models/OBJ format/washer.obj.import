@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gksmaws3yfgq"
+path="res://.godot/imported/washer.obj-f1895d559ed0c6a91c526603e89e0fa7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/washer.obj-f1895d559ed0c6a91c526603e89e0fa7.mesh"]
+
+source_file="res://assets/kenney_furniture-kit/Models/OBJ format/washer.obj"
+dest_files=["res://.godot/imported/washer.obj-f1895d559ed0c6a91c526603e89e0fa7.mesh", "res://.godot/imported/washer.obj-f1895d559ed0c6a91c526603e89e0fa7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

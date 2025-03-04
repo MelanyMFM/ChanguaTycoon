@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqy2086xk4qf7"
+path="res://.godot/imported/food_ingredient_burger_cooked.obj-2a8cbdd932ffe0a71ee24ac6e97d3cd3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/food_ingredient_burger_cooked.obj-2a8cbdd932ffe0a71ee24ac6e97d3cd3.mesh"]
+
+source_file="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/food_ingredient_burger_cooked.obj"
+dest_files=["res://.godot/imported/food_ingredient_burger_cooked.obj-2a8cbdd932ffe0a71ee24ac6e97d3cd3.mesh", "res://.godot/imported/food_ingredient_burger_cooked.obj-2a8cbdd932ffe0a71ee24ac6e97d3cd3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
