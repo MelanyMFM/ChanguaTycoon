@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=85 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="Script" path="res://lvl_one.gd" id="1_x31x1"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://dc8rkjrfy12bb" path="res://assets/City Pack.undefined-glb/Box.glb" id="12_ndy54"]
 [ext_resource type="PackedScene" uid="uid://t5sajbfbxwko" path="res://assets/City Pack.undefined-glb/ATM.glb" id="13_iy44g"]
 [ext_resource type="PackedScene" uid="uid://bomu3s2wt50b7" path="res://assets/City Pack.undefined-glb/Bench.glb" id="14_3qx56"]
+[ext_resource type="PackedScene" uid="uid://bgwernm1ou74j" path="res://assets/low_poly_commercial_deep_fryer (1).glb" id="14_mevix"]
 [ext_resource type="Script" path="res://character_body_3d(cliente).gd" id="15_dhirp"]
 [ext_resource type="PackedScene" uid="uid://cefw3tbipu2vm" path="res://assets/character/GLB format/character-male-a.glb" id="15_fqi7m"]
 [ext_resource type="PackedScene" uid="uid://bbg07hd085c3v" path="res://assets/City Pack.undefined-glb/Cone.glb" id="18_egd6m"]
@@ -33,7 +34,6 @@
 [ext_resource type="PackedScene" uid="uid://dcw8oul11d5tw" path="res://assets/floor/Pebble Square.glb" id="28_hv4yd"]
 [ext_resource type="Texture2D" uid="uid://bu56sh2vrwgql" path="res://assets/carro-de-la-compra.png" id="29_a728u"]
 [ext_resource type="ArrayMesh" uid="uid://r2imjo7o2734" path="res://assets/stylizedGrassMeshes/grass2.res" id="29_my2ip"]
-[ext_resource type="Texture2D" uid="uid://bub2w45yrfb2g" path="res://assets/blanco.png" id="29_rqxe7"]
 [ext_resource type="ArrayMesh" uid="uid://b0ef5eigi5vre" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_buns.obj" id="30_muxqp"]
 [ext_resource type="Script" path="res://panel.gd" id="30_pfblm"]
 [ext_resource type="ArrayMesh" uid="uid://cth4r00ee42yh" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_cheese.obj" id="31_0xnbo"]
@@ -233,6 +233,44 @@ radius = 0.820569
 [sub_resource type="SphereShape3D" id="SphereShape3D_3ep64"]
 radius = 0.654989
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rm4xq"]
+bg_color = Color(0, 0.592165, 0.994164, 0.666667)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjwsh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02g4c"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ti3x"]
+bg_color = Color(0.547471, 0.656552, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvjc6"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnbq5"]
+bg_color = Color(1.15514e-06, 0.633015, 0.96676, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_dirmr"]
 size = Vector3(0.0290833, 0.623901, 1.22708)
 
@@ -255,6 +293,20 @@ buffer = PackedFloat32Array(-1.311, 0, 0, -1.19089, 0, 1.311, 0, -0.131272, 0, 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wpoof"]
 size = Vector3(0.427246, 0.71875, 0.167725)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6mxh"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plh6c"]
+bg_color = Color(0.873643, 0.443432, 0.225373, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_x31x1")
@@ -489,7 +541,7 @@ mesh = SubResource("ArrayMesh_fld8s")
 skeleton = NodePath("")
 
 [node name="Fryer" parent="." instance=ExtResource("10_l45ym")]
-transform = Transform3D(-0.0004106, 0, -0.00798946, 0, 0.008, 0, 0.00798946, 0, -0.0004106, -1.34671, 0.0642416, -1.31917)
+transform = Transform3D(-0.0004106, 0, -0.00798946, 0, 0.008, 0, 0.00798946, 0, -0.0004106, -1.3471, 0.0642416, -1.32042)
 script = ExtResource("11_h4bf4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Fryer"]
@@ -507,6 +559,10 @@ shape = SubResource("BoxShape3D_u5k2u")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fryer/Area3D"]
 transform = Transform3D(21.89, 0, 0, 0, 21.89, 0, 0, 0, 21.89, -0.715836, -3.1148, -2.76387)
 shape = SubResource("BoxShape3D_qijyr")
+
+[node name="Sketchfab_Scene" parent="Fryer" instance=ExtResource("14_mevix")]
+transform = Transform3D(3.27727, 0, 0.199768, 0, 4.84273, 0, -0.145896, 0, 4.48738, -3.0229, -7.82518, -8.56351)
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pm502")
@@ -616,38 +672,50 @@ shape = SubResource("SphereShape3D_3ep64")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
-offset_right = 517.0
+offset_right = 503.0
 offset_bottom = 110.0
 mouse_force_pass_scroll_events = false
-theme_override_colors/word_highlighted_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 18
+theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
+theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_rm4xq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kjwsh")
 editable = false
 selecting_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
 [node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
-offset_left = 511.0
-offset_top = -22.0
-offset_right = 599.0
-offset_bottom = 80.0
+offset_left = 536.0
+offset_top = 6.0
+offset_right = 634.0
+offset_bottom = 99.0
 size_flags_stretch_ratio = 0.0
 stretch_mode = 0
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureButton"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 20.0
-offset_right = 60.0
-offset_bottom = 74.0
-texture = ExtResource("29_rqxe7")
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureButton"]
+[node name="Panel" type="Panel" parent="CanvasLayer/TextureButton"]
 layout_mode = 0
 offset_left = 11.0
-offset_top = 28.0
-offset_right = 64.0
+offset_top = -6.0
+offset_right = 99.0
+offset_bottom = 70.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_02g4c")
+
+[node name="Panel2" type="Panel" parent="CanvasLayer/TextureButton/Panel"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 83.0
 offset_bottom = 69.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2ti3x")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureButton"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 24.0
+offset_top = 5.0
+offset_right = 87.0
+offset_bottom = 58.0
 mouse_default_cursor_shape = 2
 texture = ExtResource("29_a728u")
 expand_mode = 1
@@ -655,19 +723,29 @@ stretch_mode = 4
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
 visible = false
-offset_left = 872.0
-offset_top = 38.0
-offset_right = 1120.0
-offset_bottom = 217.0
+offset_left = 812.0
+offset_top = 72.0
+offset_right = 1060.0
+offset_bottom = 446.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lvjc6")
 script = ExtResource("30_pfblm")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 237.0
+offset_bottom = 361.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xnbq5")
 
 [node name="Tienda" type="Label" parent="CanvasLayer/Panel"]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 12.0
-offset_right = 112.0
-offset_bottom = 39.0
-theme_override_colors/font_color = Color(0.783778, 0.15195, 0.503628, 1)
+offset_left = 54.0
+offset_top = 25.0
+offset_right = 194.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 350
 theme_override_constants/shadow_offset_x = 75
 theme_override_constants/shadow_offset_y = 75
@@ -681,13 +759,14 @@ layout_mode = 0
 offset_left = 39.0
 offset_top = 118.0
 offset_right = 83.0
-offset_bottom = 141.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 18
 
 [node name="Button" type="Button" parent="CanvasLayer/Panel"]
 layout_mode = 0
-offset_left = 162.0
+offset_left = 170.0
 offset_top = 88.0
-offset_right = 199.0
+offset_right = 214.0
 offset_bottom = 131.0
 mouse_default_cursor_shape = 2
 theme_override_colors/icon_normal_color = Color(0.990304, 0.983565, 0.999127, 1)
@@ -701,13 +780,51 @@ theme_override_constants/icon_max_width = 0
 theme_override_font_sizes/font_size = 25
 text = "+"
 
-[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+[node name="masCPS" type="Label" parent="CanvasLayer/Panel"]
 layout_mode = 0
-offset_left = 42.0
-offset_top = 84.0
-offset_right = 104.0
-offset_bottom = 107.0
-text = "Más cps"
+offset_left = 29.0
+offset_top = 95.0
+offset_right = 148.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("31_fwui6")
+theme_override_font_sizes/font_size = 28
+text = "MAS CPS"
+
+[node name="MejoraCocina" type="Label" parent="CanvasLayer/Panel"]
+offset_left = 22.0
+offset_top = 180.0
+offset_right = 155.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("31_fwui6")
+theme_override_font_sizes/font_size = 28
+text = "MEJORAR
+COCINA"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel"]
+offset_left = 167.0
+offset_top = 199.0
+offset_right = 211.0
+offset_bottom = 242.0
+mouse_default_cursor_shape = 2
+theme_override_colors/icon_normal_color = Color(0.990304, 0.983565, 0.999127, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/icon_max_width = 0
+theme_override_font_sizes/font_size = 25
+text = "+"
+
+[node name="Precio2" type="Label" parent="CanvasLayer/Panel"]
+offset_left = 31.0
+offset_top = 244.0
+offset_right = 75.0
+offset_bottom = 274.0
+theme_override_font_sizes/font_size = 18
 
 [node name="Table" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -1.3255, -0.00172448, -0.929315)
@@ -897,39 +1014,52 @@ shape = SubResource("BoxShape3D_wpoof")
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="Panel" type="Panel" parent="CanvasLayer2"]
-offset_left = 729.0
-offset_top = -1.0
-offset_right = 1120.0
-offset_bottom = 37.0
+offset_left = 693.0
+offset_top = 1.0
+offset_right = 1137.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x6mxh")
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 434.0
+offset_bottom = 54.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_plh6c")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2"]
-offset_top = 3.0
-offset_right = 20.0
-offset_bottom = 23.0
+offset_left = 1.0
+offset_top = 7.0
+offset_right = 21.0
+offset_bottom = 27.0
 
 [node name="Panel" type="Panel" parent="CanvasLayer2/HBoxContainer"]
 layout_mode = 2
 
 [node name="DineroLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
 layout_mode = 2
-offset_left = 745.0
-offset_top = 1.0
-offset_right = 815.0
-offset_bottom = 58.0
+offset_left = 720.0
+offset_top = 10.0
+offset_right = 793.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 22
 
 [node name="ChanguasLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
 layout_mode = 0
-offset_left = 921.0
-offset_top = 1.0
-offset_right = 975.0
-offset_bottom = 45.0
+offset_left = 869.0
+offset_top = 9.0
+offset_right = 924.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 22
 
 [node name="CpsLabel" type="Label" parent="CanvasLayer2/HBoxContainer/Panel"]
 layout_mode = 0
-offset_left = 1053.0
-offset_top = 1.0
-offset_right = 1101.0
-offset_bottom = 40.0
+offset_left = 1028.0
+offset_top = 9.0
+offset_right = 1076.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 22
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("40_l4rbm")
@@ -945,7 +1075,7 @@ stream = ExtResource("42_qoquv")
 
 [node name="AudioCocinar" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("43_2jvix")
-volume_db = 20.0
+volume_db = 30.0
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]
@@ -953,5 +1083,6 @@ volume_db = 20.0
 [connection signal="body_entered" from="CharacterBody3D2/Area3D" to="CharacterBody3D2" method="_on_area_3d_body_entered"]
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="CanvasLayer/Panel" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/Button" to="CanvasLayer/Panel" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Button2" to="CanvasLayer/Panel" method="_on_button_2_pressed"]
 [connection signal="area_entered" from="AreaAtencionCliente" to="CharacterBody3D(Cliente)" method="_on_area_atencion_cliente_area_entered"]
 [connection signal="area_entered" from="AreaAtencionCliente" to="CharacterBody3D2" method="_on_area_atencion_cliente_area_entered"]
