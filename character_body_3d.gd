@@ -5,6 +5,12 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var target_position: Vector3 = Vector3.ZERO
 var is_moving: bool = false
 
+# Variables para detección de atasco
+var last_position: Vector3 = Vector3.ZERO
+var stuck_timer: float = 0.0
+const STUCK_TIME_LIMIT = 0.5  # Tiempo en segundos antes de detectar atasco
+const STUCK_DISTANCE_THRESHOLD = 0.05  # Distancia mínima para considerar movimiento
+
 # Referencia al AnimationPlayer
 @onready var animation_player: AnimationPlayer = $"character-male-a2/AnimationPlayer"
 
@@ -26,6 +32,9 @@ func _input(event):
 			# Establecer la posición objetivo
 			target_position = intersection
 			is_moving = true
+			
+			stuck_timer = 0.0  # Reiniciar el temporizador de atasco
+			last_position = global_transform.origin  # Guardar posición inicial
 
 func _physics_process(delta):
 	if is_moving:
@@ -51,6 +60,18 @@ func _movement(delta):
 		# Reproducir la animación de caminar
 		if animation_player.current_animation != "walk":  # Asegúrate de que "walk" sea el nombre correcto de la animación
 			animation_player.play("walk")
+			
+		# Detectar si está atascado
+		if global_transform.origin.distance_to(last_position) < STUCK_DISTANCE_THRESHOLD:
+			stuck_timer += delta
+			if stuck_timer > STUCK_TIME_LIMIT:
+				is_moving = false  # Detener el movimiento si está atascado
+				velocity = Vector3.ZERO
+		else:
+			stuck_timer = 0.0  # Reiniciar temporizador si sí se mueve
+		
+		last_position = global_transform.origin  # Actualizar última posición
+		
 	else:
 		# Detener el movimiento cuando llegue cerca del objetivo
 		velocity.x = 0
