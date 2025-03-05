@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=76 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="Script" path="res://lvl_one.gd" id="1_x31x1"]
@@ -39,6 +39,9 @@
 [ext_resource type="ArrayMesh" uid="uid://cth4r00ee42yh" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_cheese.obj" id="31_0xnbo"]
 [ext_resource type="FontFile" uid="uid://cvw6e6k2iisvs" path="res://assets/Rikoma.ttf" id="31_fwui6"]
 [ext_resource type="ArrayMesh" uid="uid://bgt2lw4eajv5o" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_onions.obj" id="32_5h4wy"]
+[ext_resource type="AudioStream" uid="uid://bkp31hk6jocb7" path="res://assets/audio/Club-Penguin-Pizza-Parlor-Theme-_Charlie_s-Here_-_FULL-High-Quality_-_online-audio-converter.com_.wav" id="40_l4rbm"]
+[ext_resource type="AudioStream" uid="uid://b2rhhlqubgjx0" path="res://assets/audio/cash-register-fake-88639.mp3" id="41_nmvgw"]
+[ext_resource type="AudioStream" uid="uid://by171y61hphv" path="res://assets/audio/bellding-254774.mp3" id="42_qoquv"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
 
@@ -925,6 +928,18 @@ offset_left = 1053.0
 offset_top = 1.0
 offset_right = 1101.0
 offset_bottom = 40.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("40_l4rbm")
+autoplay = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("41_nmvgw")
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("42_qoquv")
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]

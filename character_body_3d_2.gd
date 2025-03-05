@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var efecto_sonido: AudioStreamPlayer3D = get_node("../AudioStreamPlayer3D2")
+
 var esta_pidiendo_changua: bool = false
 var changua_lista: bool = false
 var tiempo_llegada: float = 0.0
@@ -130,6 +132,9 @@ func entregar_changua():
 		Global.dinero += int(satisfaccion * 100) 
 		print("[Cliente] El jugador ha ganado $" + str(satisfaccion * 100))
 		Logger.log("Haz ganado $" + str(round(satisfaccion * 100)))
+		
+		efecto_sonido.play()
+		
 		print("[Cliente] Dinero actual: $" + str(Global.dinero))
 	else:
 		print("[Cliente] El cliente se fue insatisfecho porque esperó demasiado tiempo.")

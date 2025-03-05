@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://byknqdkyd2kyc"]
+[gd_scene load_steps=5 format=3 uid="uid://byknqdkyd2kyc"]
 
 [ext_resource type="Script" path="res://control.gd" id="1_56mj6"]
 [ext_resource type="Texture2D" uid="uid://huye4ytdopex" path="res://assets/menumesa.png" id="2_635xc"]
 [ext_resource type="FontFile" uid="uid://cvw6e6k2iisvs" path="res://assets/Rikoma.ttf" id="3_o7v01"]
+[ext_resource type="AudioStream" uid="uid://dagb1u1su5ul" path="res://assets/audio/videoplayback-_2_ (1).wav" id="4_v35q7"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
@@ -50,5 +51,9 @@ theme_override_colors/icon_hover_color = Color(0.94793, 0.32817, 0.346307, 1)
 theme_override_constants/outline_size = -255
 theme_override_font_sizes/font_size = 56
 text = "Nuevo Juego"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_v35q7")
+autoplay = true
 
 [connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]

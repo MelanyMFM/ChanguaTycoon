@@ -6,6 +6,8 @@ extends Panel
 @onready var costo_label: Label = $Precio
 @onready var comprar_button: Button = $Button
 
+@onready var efecto_sonido: AudioStreamPlayer3D = get_node("../../AudioStreamPlayer3D2")
+
 var max = 2
 
 func _ready():
@@ -24,8 +26,10 @@ func _on_button_pressed():
 			Global.dinero -= costo_mejora
 			
 			Global.cps -= (1/(1-aumento_cps))
+			
 			actualizar_ui()
 			Logger.log("Mejora comprada!")
+			efecto_sonido.play()
 			max -= 1
 		else:
 			Logger.log("No tienes suficiente dinero :(")

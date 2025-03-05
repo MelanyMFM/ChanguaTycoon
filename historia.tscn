@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh5ogee6tgigj"]
+[gd_scene load_steps=4 format=3 uid="uid://dh5ogee6tgigj"]
 
 [ext_resource type="Script" path="res://historia.gd" id="1_mcf25"]
 [ext_resource type="Texture2D" uid="uid://dc5joa5dq2um2" path="res://assets/Arrow 4 (1).svg" id="2_c7dl1"]
+[ext_resource type="AudioStream" uid="uid://dmre7jql4nser" path="res://assets/audio/videoplayback-_1_.wav" id="3_gj5qx"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_mcf25")
@@ -17,5 +18,9 @@ offset_top = 569.0
 offset_right = 1199.0
 offset_bottom = 660.0
 texture_normal = ExtResource("2_c7dl1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gj5qx")
+autoplay = true
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
