@@ -45,6 +45,7 @@ offset_left = 341.0
 offset_top = 324.0
 offset_right = 797.0
 offset_bottom = 443.0
+mouse_default_cursor_shape = 2
 theme_override_colors/icon_hover_color = Color(0.94793, 0.32817, 0.346307, 1)
 theme_override_constants/outline_size = -255
 theme_override_font_sizes/font_size = 56

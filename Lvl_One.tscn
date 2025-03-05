@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=73 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="Script" path="res://lvl_one.gd" id="1_x31x1"]
@@ -31,9 +31,13 @@
 [ext_resource type="PackedScene" uid="uid://dweemfxndk8gh" path="res://assets/floor/Cobblestone tile.glb" id="27_5dylo"]
 [ext_resource type="Texture2D" uid="uid://dm2lc1c0n5jcy" path="res://assets/icons/changua.png" id="27_oe6ml"]
 [ext_resource type="PackedScene" uid="uid://dcw8oul11d5tw" path="res://assets/floor/Pebble Square.glb" id="28_hv4yd"]
+[ext_resource type="Texture2D" uid="uid://bu56sh2vrwgql" path="res://assets/carro-de-la-compra.png" id="29_a728u"]
 [ext_resource type="ArrayMesh" uid="uid://r2imjo7o2734" path="res://assets/stylizedGrassMeshes/grass2.res" id="29_my2ip"]
+[ext_resource type="Texture2D" uid="uid://bub2w45yrfb2g" path="res://assets/blanco.png" id="29_rqxe7"]
 [ext_resource type="ArrayMesh" uid="uid://b0ef5eigi5vre" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_buns.obj" id="30_muxqp"]
+[ext_resource type="Script" path="res://panel.gd" id="30_pfblm"]
 [ext_resource type="ArrayMesh" uid="uid://cth4r00ee42yh" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_cheese.obj" id="31_0xnbo"]
+[ext_resource type="FontFile" uid="uid://cvw6e6k2iisvs" path="res://assets/Rikoma.ttf" id="31_fwui6"]
 [ext_resource type="ArrayMesh" uid="uid://bgt2lw4eajv5o" path="res://assets/KayKit_Restaurant_Bits_1.0_FREE/KayKit_Restaurant_Bits_1.0_FREE/Assets/obj/crate_onions.obj" id="32_5h4wy"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
@@ -607,13 +611,98 @@ shape = SubResource("SphereShape3D_3ep64")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
-offset_right = 454.0
+offset_right = 517.0
 offset_bottom = 110.0
 mouse_force_pass_scroll_events = false
+theme_override_colors/word_highlighted_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
 editable = false
 selecting_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 511.0
+offset_top = -22.0
+offset_right = 599.0
+offset_bottom = 80.0
+size_flags_stretch_ratio = 0.0
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureButton"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 74.0
+texture = ExtResource("29_rqxe7")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureButton"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 28.0
+offset_right = 64.0
+offset_bottom = 69.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("29_a728u")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
+offset_left = 872.0
+offset_top = 38.0
+offset_right = 1120.0
+offset_bottom = 217.0
+script = ExtResource("30_pfblm")
+
+[node name="Tienda" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 112.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0.783778, 0.15195, 0.503628, 1)
+theme_override_constants/line_spacing = 350
+theme_override_constants/shadow_offset_x = 75
+theme_override_constants/shadow_offset_y = 75
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("31_fwui6")
+theme_override_font_sizes/font_size = 36
+text = "TIENDA"
+
+[node name="Precio" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 118.0
+offset_right = 83.0
+offset_bottom = 141.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 88.0
+offset_right = 199.0
+offset_bottom = 131.0
+mouse_default_cursor_shape = 2
+theme_override_colors/icon_normal_color = Color(0.990304, 0.983565, 0.999127, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/icon_max_width = 0
+theme_override_font_sizes/font_size = 25
+text = "+"
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 84.0
+offset_right = 104.0
+offset_bottom = 107.0
+text = "Más cps"
 
 [node name="Table" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -1.3255, -0.00172448, -0.929315)
@@ -777,6 +866,7 @@ transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -1.34778, -0.0050493
 
 [node name="Grass2" type="MultiMeshInstance3D" parent="."]
 transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -1.76723, 0.0221682, -1.77328)
+visible = false
 cast_shadow = 0
 multimesh = SubResource("MultiMesh_pqs3n")
 
@@ -808,9 +898,9 @@ offset_right = 1120.0
 offset_bottom = 37.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2"]
-offset_top = -1.0
-offset_right = 40.0
-offset_bottom = 39.0
+offset_top = 3.0
+offset_right = 20.0
+offset_bottom = 23.0
 
 [node name="Panel" type="Panel" parent="CanvasLayer2/HBoxContainer"]
 layout_mode = 2
@@ -840,5 +930,7 @@ offset_bottom = 40.0
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]
 [connection signal="body_entered" from="CharacterBody3D(Cliente)/Area3D" to="CharacterBody3D(Cliente)" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="CharacterBody3D2/Area3D" to="CharacterBody3D2" method="_on_area_3d_body_entered"]
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="CanvasLayer/Panel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Button" to="CanvasLayer/Panel" method="_on_button_pressed"]
 [connection signal="area_entered" from="AreaAtencionCliente" to="CharacterBody3D(Cliente)" method="_on_area_atencion_cliente_area_entered"]
 [connection signal="area_entered" from="AreaAtencionCliente" to="CharacterBody3D2" method="_on_area_atencion_cliente_area_entered"]

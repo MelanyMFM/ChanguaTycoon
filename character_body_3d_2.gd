@@ -129,7 +129,7 @@ func entregar_changua():
 		print("[Cliente] Nivel de satisfacción: " + str(satisfaccion))
 		Global.dinero += int(satisfaccion * 100) 
 		print("[Cliente] El jugador ha ganado $" + str(satisfaccion * 100))
-		Logger.log("Haz ganado $" + str(satisfaccion * 100))
+		Logger.log("Haz ganado $" + str(round(satisfaccion * 100)))
 		print("[Cliente] Dinero actual: $" + str(Global.dinero))
 	else:
 		print("[Cliente] El cliente se fue insatisfecho porque esperó demasiado tiempo.")

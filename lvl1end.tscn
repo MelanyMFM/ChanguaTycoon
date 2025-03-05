@@ -1,23 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnf5s3s26urb"]
+[gd_scene load_steps=4 format=3 uid="uid://dnf5s3s26urb"]
 
 [ext_resource type="Script" path="res://lvl_1_end.gd" id="1_cyl8y"]
+[ext_resource type="Texture2D" uid="uid://huye4ytdopex" path="res://assets/menumesa.png" id="2_wpi4j"]
+[ext_resource type="FontFile" uid="uid://cvw6e6k2iisvs" path="res://assets/Rikoma.ttf" id="3_pnvxm"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_cyl8y")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -28.0
+offset_top = -192.0
+offset_right = 1165.0
+offset_bottom = 656.0
+texture = ExtResource("2_wpi4j")
+
 [node name="Label" type="Label" parent="."]
-offset_left = 440.0
-offset_top = 263.0
-offset_right = 579.0
-offset_bottom = 286.0
+offset_left = 265.0
+offset_top = 210.0
+offset_right = 945.0
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_pnvxm")
+theme_override_font_sizes/font_size = 66
 text = "NIvel 1 terminado"
 uppercase = true
 
 [node name="Button" type="Button" parent="."]
-offset_left = 412.0
-offset_top = 307.0
-offset_right = 638.0
-offset_bottom = 358.0
+offset_left = 360.0
+offset_top = 371.0
+offset_right = 777.0
+offset_bottom = 447.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 31
 text = "Volver al menú principal"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

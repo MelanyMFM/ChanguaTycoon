@@ -23,4 +23,4 @@ func _process(delta):
 	# Actualizar los Label con los valores globales
 	DineroLabel.text = "Dinero: $%d" % Global.dinero
 	ChanguasLabel.text = "Changuas: %d" % Global.changuas_listas
-	CpsLabel.text = "cps: %.1f" % Global.cps
+	CpsLabel.text = "cps: %.1f" % ((1.0/Global.cps))
