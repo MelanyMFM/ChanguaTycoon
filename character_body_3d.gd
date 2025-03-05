@@ -8,8 +8,8 @@ var is_moving: bool = false
 # Variables para detección de atasco
 var last_position: Vector3 = Vector3.ZERO
 var stuck_timer: float = 0.0
-const STUCK_TIME_LIMIT = 0.5  # Tiempo en segundos antes de detectar atasco
-const STUCK_DISTANCE_THRESHOLD = 0.05  # Distancia mínima para considerar movimiento
+const STUCK_TIME_LIMIT = 0.4  # Tiempo en segundos antes de detectar atasco
+const STUCK_DISTANCE_THRESHOLD = 0.001  # Distancia mínima para considerar movimiento
 
 # Referencia al AnimationPlayer
 @onready var animation_player: AnimationPlayer = $"character-male-a2/AnimationPlayer"

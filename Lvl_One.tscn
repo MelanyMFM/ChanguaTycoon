@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://bugdfr5t6na0k"]
+[gd_scene load_steps=77 format=4 uid="uid://bugdfr5t6na0k"]
 
 [ext_resource type="Texture2D" uid="uid://vat7g5mttdse" path="res://assets/sidewalk_0.jpg" id="1_0rci7"]
 [ext_resource type="Script" path="res://lvl_one.gd" id="1_x31x1"]
@@ -42,6 +42,7 @@
 [ext_resource type="AudioStream" uid="uid://bkp31hk6jocb7" path="res://assets/audio/Club-Penguin-Pizza-Parlor-Theme-_Charlie_s-Here_-_FULL-High-Quality_-_online-audio-converter.com_.wav" id="40_l4rbm"]
 [ext_resource type="AudioStream" uid="uid://b2rhhlqubgjx0" path="res://assets/audio/cash-register-fake-88639.mp3" id="41_nmvgw"]
 [ext_resource type="AudioStream" uid="uid://by171y61hphv" path="res://assets/audio/bellding-254774.mp3" id="42_qoquv"]
+[ext_resource type="AudioStream" uid="uid://bh27r2l3cg5ia" path="res://assets/audio/cooking-pasta-33216.mp3" id="43_2jvix"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_41bof"]
 
@@ -200,7 +201,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k8x06")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u5k2u"]
-size = Vector3(1.29367, 1, 1.90717)
+size = Vector3(1.29367, 1, 1.98789)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qijyr"]
 
@@ -492,12 +493,13 @@ transform = Transform3D(-0.0004106, 0, -0.00798946, 0, 0.008, 0, 0.00798946, 0, 
 script = ExtResource("11_h4bf4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Fryer"]
+transform = Transform3D(1.10858, 0, -3.72529e-09, 0, 1, 0, 1.49012e-08, 0, 1.12646, 2.02745, 0.848784, -0.711517)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Fryer/MeshInstance3D"]
-transform = Transform3D(12.14, 0, 5.96046e-08, 0, 12.1403, 0, -5.96046e-08, 0, 12.14, 1.57771, -1.87456, -0.840775)
+transform = Transform3D(14, 0, -1.28379e-07, 0, 14, 0, 1.28379e-07, 0, 14, 5.61913, 0.742635, -3.56071)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fryer/MeshInstance3D/StaticBody3D"]
-transform = Transform3D(0.999995, 0, -2.86847e-07, 0, 0.99999, 0, 2.86847e-07, 0, 0.999995, -0.131483, 5.96046e-08, -0.129489)
+transform = Transform3D(0.999995, 0, 3.57628e-07, 0, 0.99999, 0, -3.57628e-07, 0, 0.999995, -0.131483, 1.19209e-07, -0.0891304)
 shape = SubResource("BoxShape3D_u5k2u")
 
 [node name="Area3D" type="Area3D" parent="Fryer"]
@@ -940,6 +942,10 @@ stream = ExtResource("41_nmvgw")
 [node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("42_qoquv")
+
+[node name="AudioCocinar" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("43_2jvix")
+volume_db = 20.0
 
 [connection signal="input_event" from="Fryer/MeshInstance3D/StaticBody3D" to="Fryer" method="_on_static_body_3d_input_event"]
 [connection signal="input_event" from="Fryer/Area3D" to="Fryer" method="_on_area_3d_input_event"]
